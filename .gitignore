@@ -1,0 +1,6 @@
+OrdinaryNeuralNetworkEnv/
+OrdinaryNeuralNetworkAdamEnv/
+PollingNeuralNetworkEnv/
+PollingNeuralNetworkAdamEnv/
+CNNAdamSGDEnv/
+CNNAdamSGDPollingEnv/
