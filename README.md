@@ -19,7 +19,7 @@ To facilitate this, an exploratory method dubbed the Polling Method will attempt
 ## Principle 
 The Polling Method is loosely based upon the technique of (voting) ensemble modelling in neural networks, which refers to rather than relying on an output of a single model, multiple models are utilised with varying degrees of cooperation to improve the overall predictive performance of the model through leveraging the diversity of different models, as well as bootstrap aggregating (bagging), a method pioneered by Professor Leo Brieman.
 
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/19a7145e-76e8-4583-a1e9-5fc1cb1d6d75)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/0c5f9976-5b4b-4cbb-a93e-f4ec26a4c833)
 
 In the Bias-Variance Trade-off observed in (1) where E refers to expectation, h_D refers to the classifier using a dataset D, h ̅ refers to the expected classifier D, y refer to the general Ground Truth (correct prediction) and y ̅ refers to the expected value of all models, the composition equates to (in order of) Total Mean Square Error in a model =  Total Variance + Total Bias + Noise. When improving diversity into the dataset (i.e. increasing the number of datasets) as observed in (2), the effect on the minor model can be observed through (3). When this happens. the weak law of large numbers is evoked as observed in (4) as the total variance error as observed in (1) becomes mitigated through transforming h_D (x) towards h ̅(x).
 
@@ -32,15 +32,15 @@ The Polling Method suggests utilising the bagging approach with a few marked dif
 
 A computer vision-abled ANN will be trained with the Modified National Institute of Standards and Technology (MNIST) dataset for all labels (42,000 examples). 
 
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/3a95fd41-5767-4b6a-bf35-01b6325a73e7)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/e70c9168-2751-4a51-b6bd-97fc0df8ccf0)
 
 ## Convolutional Neural Network Model
 
 A computer vision-abled CNN will be trained with the MNIST dataset for all labels (42,000 examples). In this experiment, the CNN is based upon the Numpy-CNN code designed by Alescontrela that is available and was taken from GitHub (https://github.com/Alescontrela/Numpy-CNN). 
 
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/45259adf-1b9a-423a-bdb3-df4228d86311)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/b340f759-0984-4dcf-8082-cd8bae715f2e)
 
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/b742d4d7-4054-40e0-b802-ac4e90da7ea0)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/1b1c8e3b-31c3-446b-8ecf-bd27ab787fc4)
 
 ## Experimentation Results
 Direct cost function analysis was used to perform comparison studies of neural networks that employed the Polling Method against neural networks that did not, with the consideration being the ability of the models to combat undershooting and overshooting during gradient descent of the cost function towards the global minima. The consideration being loss against epoch. For ANN, all training was performed with a maximum epoch of 100. 
@@ -69,48 +69,46 @@ All experimentations were performed with the following hardware considerations: 
 The ANN consists of initial weights and bias initialisation, forward pass, backpropagation, updating of weights and biases, 3x learning rates (α_1,α_2,α_3) of values (0.1,0.5,0.9).
 
 ### ANN with Polling Method cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/54d2b27b-b52d-44f8-89ec-5a81b956d4e0)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/686f653f-1fb6-44f7-b3a0-6a1137e9473e)
 
 ### ANN with Polling Method gradient descent (with the best accuracy identified with ✓)
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/3236ceea-4584-44a1-9b72-972554ed317a)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/a261d2e8-2beb-4de6-991d-c3591845edaa)
 
 ## ANN with Polling Method/Adaptive Moment Estimation, ADAM – Model 2
 This will consist of initial weights and bias initialisation, forward pass, backpropagation, updating of weights and biases by ADAM optimiser, 3x learning rates (α_1,α_2,α_3) of values (0.01,0.25,0.5).
 
 ### ANN with Polling Method/ADAM cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/69fd39bc-f05f-4896-ad1d-562d7879553f)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/6973b4d9-d278-4ee9-910d-4d5ab713b675)
 
 ### ANN with Polling Method/ADAM gradient descent (with the best accuracy identified with ✓) 
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/d848de97-3d20-4771-9505-40a8bc070e89)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/9c785535-1487-48d9-979b-0a70f63b7d36)
 
 ## Ordinary ANN – Model 3
 This will consist of initial weights and bias initialisation, forward pass, backpropagation, updating of weights and biases, 1x learning rate (α) of values (0.5).
 
 ### ANN cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/19ae0e63-55c6-4f9c-93f6-21f2c3abb688)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/5372f79d-2e6b-495d-87f4-b101f5c80920)
 
 ## Ordinary ANN with Adaptive Moment Estimation, ADAM – Model 4
 This will consist of initial weights and bias initialisation, forward pass, backpropagation, updating of weights and biases by ADAM optimiser, 1x learning rate (α) of values (0.01)).
 
 ### ANN with ADAM cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/f8099bd2-087b-4fb8-8694-8f0d6da73c0d)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/c6c5c0b5-009f-452e-923d-365ae7934350)
 
 ## Convolutional Neural Network with Polling Method/Adaptive Moment Estimation, ADAM – Model 5
 This will consist of initial weights and bias initialisation, convolutional initialisation, convolutional operations (maxpooling and flattening), forward pass, backpropagation, updating of weights and biases by ADAM optimiser, 3x learning rates (α_1,α_2,α_3) of values (0.01,0.05,0.1).
 
 ### CNN with Polling Method/ADAM cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/6e5f4772-54a6-4469-bb20-88a4e7214f84)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/6215cce6-732d-44ee-9d09-cb9c93e2d717)
 
 ## Convolutional Neural Network with Adaptive Moment Estimation, ADAM – Model 6 
 This will consist of initial weights and bias initialisation, convolutional initialisation, convolutional operations (maxpooling and flattening), forward pass, backpropagation, updating of weights and biases by ADAM optimiser, 1x learning rate (α) of values (0.01).
 
 ### CNN with ADAM cost function
-![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/73136505-1527-49c5-a323-b6a702c14bb6)
+![image](https://github.com/Kaitan1995/Expediting-Convergence-via-Polling-Optimisation-for-Gradient-Descent-in-Neural-Networks/assets/93040738/8fae6c69-8991-429d-905f-8996c269d66a)
 
 # Results and Findings
 
 For ANN Models, a direct comparison between Model 1 and Model 3 determines that there is comparable performance in terms of accuracy. With Model 2, the accuracy was raised to 89.3%, which while comparable to Model 4 alone, but outperforming Model 4 in terms of total raw losses in cost function analysis; Model 2 boasts a total raw losses score of ~5000 absolute difference error in Figure 4 against Model 4’s absolute difference error of ~10,000 in Figure 6, where the (collation over the epoch/iteration) absolute difference error is defined as the of the partial derivative of dA_2  from the loss function, dZ_2 which was derived from the one-hot encoding process as described in the backpropagation step. With the Polling Method (Model 2), the collective error is the lowest out of the comparable ANN models (Model 1, 3 and 4) using the same number of epochs/iterations. Furthermore, Model 2 appears to reach a point of convergence/saturation compared to the other ANN models.
 
 An analysis of a CNN model with the Polling Method (Model 5) against a CNN model with ADAM optimiser (Model 6) strongly suggests a similarity in performance.
-
-
