@@ -1,3 +1,44 @@
+# How to Run
+<TABLE>
+  <colgroup>
+       <col span="1" width='300px'>
+       <col span="1">
+  </colgroup>
+  
+  <TR>
+    <TH width='300px'>Instruction Structure</TH>
+    <TH>Instruction Description</TH>
+  </TR>
+
+<TR>
+  <TD>
+    <div>
+      <IMG src='placeholder' width='300px' />
+    </div>
+  </TD>
+  <TD>
+    <div><b>1) Choosing to feed .csv Training File </b></div><BR>
+    <div> You will be prompted to select the .csv training  file. This contains the repository of the training datasets to be processed by the programs. Please choose the file "train.csv" that contains the list of training datasets.</div>
+  </TD>
+</TR>
+
+<TR>
+  <TD>
+    <div>
+      <IMG src='placeholder' width='300px' />
+    </div>
+  </TD>
+  <TD>
+    <div><b>2) Press Continue </b></div><BR>
+    <div> Please press continue to enable continuation.</div>
+  </TD>
+</TR>
+
+</TABLE>
+<HR>
+</BODY>
+</HTML>
+
 # Expediting Convergence via Polling Optimisation for Gradient Descent in Neural Networks Test
 
 An inherent disadvantage remains however where neural networks are deemed "black box" models; their operations depending on sometimes obscure and complex attenuation of weights and biases in interconnected nodes upon introduction of complexities, so as to attempt to learn and make predictions. The amounts of attenuation being tied to an important hyperparameter – the learning rate. As the learning rate affects the ability and efficiency of gradient descent towards the global minima of the cost function after each backpropagation process, having a constant learning rate typically leads to rather disastrous results due to two definitive scenarios (I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. in Adaptive computation and machine learning series. Cambridge, MA: MIT Press, 2017.) 
