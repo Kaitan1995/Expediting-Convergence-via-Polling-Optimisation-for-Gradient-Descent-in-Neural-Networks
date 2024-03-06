@@ -10,10 +10,22 @@
     <TH>Instruction Description</TH>
   </TR>
 
+  <TR>
+  <TD>
+    <div>
+      <IMG src=https://github.com/Kaitannn/Polling-Optimisation-for-Gradient-Descent/assets/93040738/4431c5e1-5a0b-4dac-adf3-a0960e410724 width='300px' />
+    </div>
+  </TD>
+  <TD>
+  <div><b>1) Running of Model Executable </b></div><BR>
+  <div>Decide in which model to run and choose the .cmd file of the chosen model. For example, in this instance the PollingNeuralNetwork.cmd is selected.</div>
+  </TD>
+</TR>
+
 <TR>
   <TD>
     <div>
-      <IMG src='placeholder' width='300px' />
+      <IMG src=https://github.com/Kaitannn/Polling-Optimisation-for-Gradient-Descent/assets/93040738/69e9d5ce-4c34-4d97-8976-680d8da0263d width='300px' />
     </div>
   </TD>
   <TD>
@@ -25,7 +37,7 @@
 <TR>
   <TD>
     <div>
-      <IMG src='placeholder' width='300px' />
+      <IMG src=https://github.com/Kaitannn/Polling-Optimisation-for-Gradient-Descent/assets/93040738/a97caa54-0482-43a8-85e7-563371bad3a2 width='300px' />
     </div>
   </TD>
   <TD>
