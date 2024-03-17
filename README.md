@@ -51,9 +51,9 @@
 </BODY>
 </HTML>
 
-# Expediting Convergence via Polling Optimisation for Gradient Descent in Neural Networks Test
+# Motivation behind Expediting Convergence via Polling Optimisation for Gradient Descent in Neural Networks Test
 
-An inherent disadvantage remains however where neural networks are deemed "black box" models; their operations depending on sometimes obscure and complex attenuation of weights and biases in interconnected nodes upon introduction of complexities, so as to attempt to learn and make predictions. The amounts of attenuation being tied to an important hyperparameter – the learning rate. As the learning rate affects the ability and efficiency of gradient descent towards the global minima of the cost function after each backpropagation process, having a constant learning rate typically leads to rather disastrous results due to two definitive scenarios (I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. in Adaptive computation and machine learning series. Cambridge, MA: MIT Press, 2017.) 
+An inherent disadvantage remains where neural networks are deemed "black box" models; their operations depending on sometimes obscure and complex attenuation of weights and biases in interconnected nodes upon introduction of complexities, so as to attempt to learn and make predictions. The amounts of attenuation being tied to an important hyperparameter – the learning rate. As the learning rate affects the ability and efficiency of gradient descent towards the global minima of the cost function after each backpropagation process, having a constant learning rate typically leads to rather disastrous results due to two definitive scenarios (I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. in Adaptive computation and machine learning series. Cambridge, MA: MIT Press, 2017.) 
 - When ‘far away’ from the global minima of the cost function, undershoot may occur and results in the model taking longer than practically allowable to converge.
 - When ‘near’ the global minima of the cost function, overshoot may occur which results in an excessive time for the model to converge. This is caused by too excessive an update to the weights and biases within the model.
 
